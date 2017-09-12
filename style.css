@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.clearfix:after,
+.clearfix:before{
+    display: table;
+    content: '';
+}
+.clearfix:after{
+    clear: both;
+}
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.out-box{
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.modal-win{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.single_contact:hover{
+    background-color: #cadfed;
+}
+
+button:hover{
+    background-color: #cadfed;
+}
+
+
+
+
+
+.newContact {
+    background-color: #ffffff;
+    margin: 30px auto;
+    padding: 30px 20px 8px 20px;
+    border: 1px solid #888;
+    max-width: 400px;
+    border-radius: 5px;
+ }
+
+.Del_Close_Save {
+    margin-top: 15px;
+}
+
+
+.header, .contact_list div {
+    border-bottom: 1px solid #9cadad;
+}
+
+.contact_list div {
+    padding: 10px 5px 10px 10px;
+}
+
+button {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #ffffff;
+    /*color: white;*/
+    font-size: 20px;
+    margin: 10px 10px;
+    padding: 1px 5px;
+    border-radius: 4px;
+}
+
+#add-phone, #remove-phone, #add-email, #remove-email {
+    margin: 0;
+}
+
+.add_contact{
+    padding: 0;
+    width: 50px;
+    height: 34px;
+    float: right;
+    margin: 15px 30px 15px 10px;
+}
+
+.del {
+    background-color: #ffd8d8;
+}
+
+.find_inp, .input_zone{
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 4px;
+}
+
+.input_zone{
+    margin: 10px 10px;
+    width: 71%;
+}
+.find_inp{
+    height: 30px;
+    float: left;
+    margin: 15px 10px 15px 20px;
+}
+
+.contact_list div {
+    font-size: 20px;
+}
+
+.alarm {
+    background-color: #ffd8d8;
+}
+
+.switch{
+    display: none;
+}
+

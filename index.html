@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+</head>
+<body>
+<div class="out-box clearfix">
+    <div class="header clearfix">
+        <input class="find_inp" id="find_inp" placeholder="Search...">
+
+        <button class="add_contact"  id="add">+</button>
+    </div>
+
+    <div class="modal-win switch" id="modal-win">
+        <div class="newContact clearfix switch" id="newContact" >
+            <div class="main_new_contact_block clearfix">
+
+                <div class="clearfix">
+                    <input type="text" required placeholder="Name" class="input_zone" id="name">
+                    <p id="name-warning" class="warning switch" >*Required field</p>
+                    <input type="text" required placeholder="Lastname" class="input_zone" id="lastname">
+                    <p id="lastname-warning" class="warning switch" >*Required field</p>
+                </div>
+                <div class="clearfix" id="inputPhone">
+                    <input id="phone0" class="input_zone single-phone" placeholder="Phone" >
+                    <button class="new_phone_mail" type=button"" id="remove-phone">-</button>
+                    <button class="new_phone_mail" type=button"" id="add-phone">+</button>
+                    <p id="phone-warning" class="warning switch" >*Required field</p>
+                </div>
+
+                <div class="clearfix" id="inputEmail">
+                    <input  id="email0" class="input_zone single-email" placeholder="Email">
+                    <button class="new_phone_mail" type=button"" id="remove-email">-</button>
+                    <button class="new_phone_mail" type=button"" id="add-email">+</button>
+                    <p id="warning0" class="warning switch" >*in the format email@site.com</p>
+                </div>
+                <div class="Del_Close_Save clearfix">
+                    <button class="save_chan switch" type="button" id="save_chan">Save</button>
+                    <button class="save" type="button" id="save">Save</button>
+                    <button class="close" type="button" id="close">Close</button>
+                    <button class="del switch" type="button" id="del">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact_list" id="contact_list">
+
+    </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
